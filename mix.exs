@@ -25,7 +25,8 @@ defmodule Ethereum.MixProject do
       dialyzer: [
         flags: [:underspecs, :unknown, :unmatched_returns],
         plt_add_apps: [:mix, :iex, :logger],
-        plt_add_deps: :transitive
+        plt_add_deps: :transitive,
+        ignore_warnings: ".dialyzer.ignore-warnings"
       ]
     ]
   end
